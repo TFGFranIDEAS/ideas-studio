@@ -29,9 +29,9 @@
 
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
         <property name="driverClass" value="com.mysql.jdbc.Driver" />
-        <property name="jdbcUrl" value="jdbc:mysql://#{'${application.dockerMode}' == 'true' ?'database':'localhost'}:3306/${application.mysqlDB}" />
-        <property name="user" value="${application.mysqlUser}" />
-        <property name="password" value="${application.mysqlPass}" />
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/ideas" />
+        <property name="user" value="user" />
+        <property name="password" value="password" />
         <!-- C3P0 properties -->
         <property name="acquireIncrement" value="5" />
         <property name="minPoolSize" value="5" />

@@ -30,7 +30,7 @@
         <link rel="stylesheet" href="css/social-buttons.css">
         <!-- Custom css styles -->
         <link rel="stylesheet" href="css/e3.css">
-        
+        <link rel="stylesheet" href="js/handsontable/handsontable.full.css">
         
         <!-- Initialization scripts -->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>                                    

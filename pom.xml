@@ -82,7 +82,6 @@
         <!-- IDE-specific properties -->
         <netbeans.hint.deploy.server>Tomcat</netbeans.hint.deploy.server>
     </properties>
-    
     <repositories>
 
         <!-- Spring repository -->
@@ -675,7 +674,7 @@
             <groupId>xml-apis</groupId>
             <artifactId>xml-apis</artifactId>
             <version>1.4.01</version>
-        </dependency>
+        </dependency>        
     </dependencies>
 
     <!-- BUILD CONFIGURATION -->
