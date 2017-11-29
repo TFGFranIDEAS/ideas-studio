@@ -16,10 +16,10 @@
        "ideas-plaintext-language": "https://labs.isa.us.es:8181/ideas-plaintext-language",
        "ideas-csv-language": "https://labs.isa.us.es:8181/ideas-csv-language",
        "ideas-lusdl-language": "https://labs.isa.us.es:8181/ideas-lusdl-language",
-       "ideas-html-language": "https://labs.isa.us.es:8181/ideas-html-language",
+       "ideas-html-language": "https://localhost:8181/ideas-html-language",
        "ideas-soup-language": "https://labs.isa.us.es:8181/ideas-soup-language",
-       "ideas-json-language": "https://labs.isa.us.es:8181/ideas-json-language",
-       "ideas-yaml-language": "https://labs.isa.us.es:8181/ideas-yaml-language",
+       "ideas-json-language": "https://localhost:8181/ideas-json-language",
+       "ideas-yaml-language": "https://localhost:8181/ideas-yaml-language",
        "ideas-language-angular": "https://labs.isa.us.es:8181/ideas-language-angular",
        "ideas-language-angular-controller": "https://labs.isa.us.es:8181/ideas-language-angular-controller",
        "ideas-R-language": "https://labs.isa.us.es:8181/ideas-R-language"

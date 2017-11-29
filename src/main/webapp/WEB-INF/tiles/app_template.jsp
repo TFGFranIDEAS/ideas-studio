@@ -29,19 +29,15 @@
         <link rel="stylesheet" href="css/jquery-ui.css">
         <link rel="stylesheet" href="css/jquery.fileupload.css">
         <link rel="stylesheet" href="css/jquery.fileupload-ui.css">
-        <link rel="stylesheet" href="css/displaytag.css" type="text/css">
         <link rel="stylesheet" href="css/passfield.min.css" type="text/css">
         <!-- Custom css styles -->
         <link href="css/jquery.contextMenu.css" rel="stylesheet" type="text/css" >
         <link rel='stylesheet' type='text/css' href='css/dyntree/skin/exemplar-dynatree.css'>
         <link rel="stylesheet" href="css/ideas.css">
-        <link rel="stylesheet" href="css/vendor/bootstrap-select.min.css">
-
+		<link rel="stylesheet" href="js/handsontable/handsontable.full.css">
         <!-- Initialization scripts -->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <script type="text/javascript" src="js/vendor/jquery.js"></script>
-        <script type="text/javascript" src="js/vendor/bootstrap.js"></script>
-        <script type="text/javascript" src="js/vendor/bootstrap-select.min.js"></script>
         <script type="text/javascript" src="js/vendor/jquery-ui.js"></script>
         <script type="text/javascript" src="js/vendor/jquery.ui.resizable.js"></script>
         <script src='js/vendor/jquery.cookie.js' type="text/javascript"></script>
@@ -57,6 +53,7 @@
         <script src="js/ace-build/ext-language_tools.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/ace-build/ext-searchbox.js" type="text/javascript" charset="utf-8"></script>
 
+        <script type="text/javascript" src="js/vendor/bootstrap.js"></script>
         <script type="text/javascript" src="js/md5.js"></script>
 
         <script type="text/javascript" src="js/requestHelper.js"></script>
@@ -92,6 +89,7 @@
         <script type="text/javascript" src="js/angular/app.js"></script>
         <script type="text/javascript" src="js/angular/directives/ppinotDirective.js"></script>
         <script type="text/javascript" src="js/angular/filters/unquoteFilter.js"></script>
+        <script type="text/javascript" src="js/handsontable/handsontable.full.js"></script>
 
     </head>
 

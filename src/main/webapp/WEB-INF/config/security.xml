@@ -43,6 +43,7 @@
         <security:intercept-url pattern="/favicon.ico" access="permitAll"  requires-channel="https" />
         <security:intercept-url pattern="/img/**" access="permitAll"  requires-channel="https" />
         <security:intercept-url pattern="/js/**" access="permitAll"  requires-channel="https" />
+        <security:intercept-url pattern="/webjars/**" access="permitAll"  requires-channel="https" />
         <security:intercept-url pattern="/fonts/**" access="permitAll"  requires-channel="https" />
         <security:intercept-url pattern="/css/**" access="permitAll"  requires-channel="https" />
         <!-- Required by he Sprint social connection controller -->
@@ -108,7 +109,7 @@
         <!-- <security:http-basic />
         <security:custom-filter ref="digestFilter" after="BASIC_AUTH_FILTER" /> -->
         <security:port-mappings>
-            <security:port-mapping http="8888" https="8881" />
+            <security:port-mapping http="8080" https="8181" />
         </security:port-mappings>
     </security:http>
     

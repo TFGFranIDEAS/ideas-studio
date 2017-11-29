@@ -93,7 +93,7 @@ public class FileController extends AbstractController {
         boolean success = Boolean.TRUE;
         
         try {
-            fileUri = new String(fileUri.getBytes("iso-8859-15"),"UTF-8");
+            fileUri = new String(fileUri.getBytes("UTF-8"),"UTF-8");
         } catch (Exception ex) {
             logger.log(Level.INFO, "Unsopported encoding", ex);
         }
@@ -136,8 +136,8 @@ public class FileController extends AbstractController {
         boolean success = Boolean.TRUE;
         
          try {
-            fileUri = new String(fileUri.getBytes("iso-8859-15"),"UTF-8");
-            newName = new String(newName.getBytes("iso-8859-15"),"UTF-8");
+            fileUri = new String(fileUri.getBytes("UTF-8"),"UTF-8");
+            newName = new String(newName.getBytes("UTF-8"),"UTF-8");
         } catch (Exception ex) {
             logger.log(Level.INFO, "Unsopported encoding", ex);
         }
@@ -174,8 +174,8 @@ public class FileController extends AbstractController {
         boolean success = Boolean.TRUE;
         
          try {
-            fileUri = new String(fileUri.getBytes("iso-8859-15"),"UTF-8");
-            destUri = new String(destUri.getBytes("iso-8859-15"),"UTF-8");
+            fileUri = new String(fileUri.getBytes("UTF-8"),"UTF-8");
+            destUri = new String(destUri.getBytes("UTF-8"),"UTF-8");
         } catch (Exception ex) {
             logger.log(Level.INFO, "Unsopported encoding", ex);
         }
@@ -210,7 +210,7 @@ public class FileController extends AbstractController {
         boolean success = Boolean.TRUE;
         
          try {
-            fileUri = new String(fileUri.getBytes("iso-8859-15"),"UTF-8");
+            fileUri = new String(fileUri.getBytes("UTF-8"),"UTF-8");
         } catch (Exception ex) {
             logger.log(Level.INFO, "Unsopported encoding", ex);
         }
@@ -240,7 +240,7 @@ public class FileController extends AbstractController {
 
     /* Content */
     @RequestMapping(value = "/content", method = RequestMethod.GET)
-    @ResponseBody
+    @ResponseBody()
     public String getFileContent(@RequestParam("fileUri") String fileUri) {
         
         initRepoLab();
@@ -248,7 +248,7 @@ public class FileController extends AbstractController {
         String fileContent = "";
         
          try {
-            fileUri = new String(fileUri.getBytes("iso-8859-15"),"UTF-8");
+            fileUri = new String(fileUri.getBytes("UTF-8"),"UTF-8");
         } catch (Exception ex) {
             logger.log(Level.INFO, "Unsopported encoding", ex);
         }
@@ -272,7 +272,7 @@ public class FileController extends AbstractController {
         boolean success = Boolean.TRUE;
         
          try {
-            fileUri = new String(fileUri.getBytes("iso-8859-15"),"UTF-8");
+            fileUri = new String(fileUri.getBytes("UTF-8"),"UTF-8");
         } catch (Exception ex) {
             logger.log(Level.INFO, "Unsopported encoding", ex);
         }
@@ -301,8 +301,8 @@ public class FileController extends AbstractController {
         AppResponse response = new AppResponse();
 
         try {
-            demoWorkspaceName = new String(demoWorkspaceName.getBytes("iso-8859-15"), "UTF-8");
-            targetWorkspaceName = new String(targetWorkspaceName.getBytes("iso-8859-15"), "UTF-8");
+            demoWorkspaceName = new String(demoWorkspaceName.getBytes("UTF-8"), "UTF-8");
+            targetWorkspaceName = new String(targetWorkspaceName.getBytes("UTF-8"), "UTF-8");
         } catch (Exception ex) {
             logger.log(Level.INFO, "Unsopported encoding", ex);
         }
@@ -383,9 +383,9 @@ public class FileController extends AbstractController {
         boolean success = true;
         
          try {
-            workspaceName = new String(workspaceName.getBytes("iso-8859-15"),"UTF-8");
-            description = new String(description.getBytes("iso-8859-15"),"UTF-8");
-            tags = new String(tags.getBytes("iso-8859-15"),"UTF-8");
+            workspaceName = new String(workspaceName.getBytes("UTF-8"),"UTF-8");
+            description = new String(description.getBytes("UTF-8"),"UTF-8");
+            tags = new String(tags.getBytes("UTF-8"),"UTF-8");
         } catch (Exception ex) {
             logger.log(Level.INFO, "Unsopported encoding", ex);
         }
@@ -414,9 +414,9 @@ public class FileController extends AbstractController {
         boolean success = true;
         
          try {
-            workspaceName = new String(workspaceName.getBytes("iso-8859-15"),"UTF-8");
-            newName = new String(newName.getBytes("iso-8859-15"),"UTF-8");
-            newDescription = new String(newDescription.getBytes("iso-8859-15"),"UTF-8");
+            workspaceName = new String(workspaceName.getBytes("UTF-8"),"UTF-8");
+            newName = new String(newName.getBytes("UTF-8"),"UTF-8");
+            newDescription = new String(newDescription.getBytes("UTF-8"),"UTF-8");
         } catch (Exception ex) {
             logger.log(Level.INFO, "Unsopported encoding", ex);
         }
@@ -475,7 +475,7 @@ public class FileController extends AbstractController {
         boolean success = true;
         
          try {
-            workspaceName = new String(workspaceName.getBytes("iso-8859-15"),"UTF-8");
+            workspaceName = new String(workspaceName.getBytes("UTF-8"),"UTF-8");
         } catch (Exception ex) {
             logger.log(Level.INFO, "Unsopported encoding", ex);
         }
@@ -521,7 +521,7 @@ public class FileController extends AbstractController {
         initRepoLab();
         
          try {
-            workspaceName = new String(workspaceName.getBytes("iso-8859-15"),"UTF-8");
+            workspaceName = new String(workspaceName.getBytes("UTF-8"),"UTF-8");
         } catch (Exception ex) {
             logger.log(Level.INFO, "Unsopported encoding", ex);
         }
