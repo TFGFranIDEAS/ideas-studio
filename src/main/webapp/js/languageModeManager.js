@@ -81,13 +81,22 @@ var ModeManager = {
                 ModeManager.inspectorLoadersMap[moduleId] = eval('(' + moduleManifest.inspectorLoader + ')'); // Eval is necessary as the received type is String.
                 ModeManager.extIdMap[moduleManifest.extension] = moduleId;
                 ModeManager.converterMap[moduleId] = ModeManager.idUriMap[moduleManifest.id] + DEPRECATED_CONVERTER_URI;
-
-                if (!(moduleId in ModeManager.formatsBiMap))
+                
+                if (!(moduleId in ModeManager.formatsBiMap)){
                     ModeManager.formatsBiMap[moduleId] = {};
-
+                }
                 for (var i = 0; i < moduleManifest.formats.length; i++) {
                     var format = moduleManifest.formats[i];
+                    
                     ModeManager.formatsBiMap[moduleId][format.format] = format;
+                    
+                    if(format.extensions != null){
+	                    for (var j = 0; j < format.extensions.length; j++){
+	                    	var extensionFormat = format.extensions[j];
+	                    	
+	                    	ModeManager.extIdMap[extensionFormat] = moduleId;
+	                    }
+                    }
                 }
             } else {
                 for (var key in moduleManifest.models) {

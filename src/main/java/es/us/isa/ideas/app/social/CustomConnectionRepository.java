@@ -245,7 +245,7 @@ public class CustomConnectionRepository implements ConnectionRepository {
         this.connectionMapper = connectionMapper;
     }
 
-    private final class ServiceProviderConnectionMapper {
+    public final class ServiceProviderConnectionMapper {
 
         public List<Connection<?>> mapEntities(List<RemoteUser> socialUsers) {
             List<Connection<?>> result = new ArrayList<Connection<?>>();

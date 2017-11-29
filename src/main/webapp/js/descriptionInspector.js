@@ -3604,6 +3604,9 @@ var DescriptionInspector = {
                             });
         },
         buildExampleFormCreator: function () {
+        	var extension = ModeManager.calculateExtFromFileUri(EditorManager.getCurrentUri());
+        	
+        	if(extension != 'arff' && extension != 'csv' && extension != 'xlsx' && extension != 'xlsm' && extension != 'xls'){
             // Config button
             var selectorId = "inspectorModelContent",
                     buttonClass = "buildExampleFormCreator",
@@ -3677,6 +3680,7 @@ var DescriptionInspector = {
                 });
             }
             );
+        	}
         },
         /**
          * Da funcionalidad a los botones de para accionar los menúes de "Add" y

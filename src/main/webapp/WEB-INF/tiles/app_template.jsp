@@ -29,7 +29,6 @@
         <link rel="stylesheet" href="css/jquery-ui.css">
         <link rel="stylesheet" href="css/jquery.fileupload.css">
         <link rel="stylesheet" href="css/jquery.fileupload-ui.css">
-        <link rel="stylesheet" href="css/displaytag.css" type="text/css">
         <link rel="stylesheet" href="css/passfield.min.css" type="text/css">
         <!-- Custom css styles -->
         <link href="css/jquery.contextMenu.css" rel="stylesheet" type="text/css" >
